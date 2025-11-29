@@ -26,3 +26,14 @@ São avaliados os tempos de **inserção**, **busca** e **ordenação** em difer
 
 Todos os arquivos estão no **mesmo diretório**, sem uso de pacotes, para facilitar a execução no **jGRASP**:
 
+
+---
+
+## ▶️ Como Compilar e Executar o Projeto
+
+### ✅ Opção 1 — Usando o Terminal (Prompt de Comando)
+
+1. Abra a pasta onde estão os arquivos `.java`
+2. Compile o projeto:
+```bash
+javac Main.java
