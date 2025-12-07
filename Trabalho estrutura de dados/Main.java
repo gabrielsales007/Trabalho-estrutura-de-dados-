@@ -9,7 +9,7 @@ public class Main {
         int[] sizes = {100, 1000, 10000};
         InsertionOrder[] orders = InsertionOrder.values();
 
-        System.out.println("=== INÍCIO DOS TESTES ===");
+        System.out.println("=== INICIO DOS TESTES ===");
 
         for (int size : sizes) {
             for (InsertionOrder order : orders) {
@@ -109,13 +109,12 @@ public class Main {
                     sortMergeV[r] = (end - start) / 1e6;
                 }
 
-                System.out.printf("Vetor - Inserção: %.4f ms\n", avg(insertV));
+                System.out.printf("Vetor - Insercao: %.4f ms\n", avg(insertV));
                 System.out.printf("Vetor - Busca Sequencial: %.6f ms\n", avg(seqSearchV));
-                System.out.printf("Vetor - Busca Binária: %.6f ms\n", avg(binSearchV));
+                System.out.printf("Vetor - Busca Binaria: %.6f ms\n", avg(binSearchV));
                 System.out.printf("Vetor - Insertion Sort: %.4f ms\n", avg(sortInsV));
                 System.out.printf("Vetor - Merge Sort: %.4f ms\n\n", avg(sortMergeV));
 
-                // ======= BST =======
                 double[] insertBST = new double[REPETITIONS];
                 double[] searchBST = new double[REPETITIONS];
 
@@ -144,10 +143,9 @@ public class Main {
                     searchBST[r] = (total / 6.0) / 1e6;
                 }
 
-                System.out.printf("BST - Inserção: %.4f ms\n", avg(insertBST));
+                System.out.printf("BST - Insercao: %.4f ms\n", avg(insertBST));
                 System.out.printf("BST - Busca: %.6f ms\n\n", avg(searchBST));
 
-                // ======= AVL =======
                 double[] insertAVL = new double[REPETITIONS];
                 double[] searchAVL = new double[REPETITIONS];
 
@@ -176,14 +174,14 @@ public class Main {
                     searchAVL[r] = (total / 6.0) / 1e6;
                 }
 
-                System.out.printf("AVL - Inserção: %.4f ms\n", avg(insertAVL));
+                System.out.printf("AVL - Insercao: %.4f ms\n", avg(insertAVL));
                 System.out.printf("AVL - Busca: %.6f ms\n", avg(searchAVL));
 
                 System.out.println("----------------------------------------");
             }
         }
 
-        System.out.println("=== FIM ===");
+        System.out.println("=FIM=");
     }
 
     static double avg(double[] a) {
@@ -192,3 +190,4 @@ public class Main {
         return s / a.length;
     }
 }
+
