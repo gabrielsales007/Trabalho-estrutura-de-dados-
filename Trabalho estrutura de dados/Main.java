@@ -18,8 +18,6 @@ public class Main {
 
                 int[] base = DataGenerator.generateSequence(size);
                 int[] sequence = DataGenerator.applyOrder(base, order);
-
-                // ======= VETOR =======
                 double[] insertV = new double[REPETITIONS];
                 double[] seqSearchV = new double[REPETITIONS];
                 double[] binSearchV = new double[REPETITIONS];
@@ -190,4 +188,5 @@ public class Main {
         return s / a.length;
     }
 }
+
 
